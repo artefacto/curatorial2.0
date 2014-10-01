@@ -1,0 +1,23 @@
+/* CSS declarations go here */
+
+.login-display-name {
+  color: white
+}
+#login-buttons {
+  padding-top: 0.5em;
+  background-color: inherit
+}
+
+nav #login-dropdown-list {} nav #login-dropdown-list a {
+  background: inherit;
+  padding: 0;
+}
+nav #login-buttons .login-link-and-dropdown-list {
+  margin-right: 200px;
+}
+
+
+.footer {
+  background: #222;
+  color: #fff;
+}
