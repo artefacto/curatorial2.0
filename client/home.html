@@ -5,7 +5,31 @@
     <h2>About this app</h2>
     <p>Tell everyone about your amazing meteor app here
     </p>
-    <a href="#" class="button small radius">Call to action</a>
+    <a href="#" class="button small radius" data-reveal-id="cta-modal">Call to action</a>
+
   </div>
 
+</template>
+
+<template name="modal">
+  <div id="cta-modal" class="reveal-modal" data-reveal>
+    <form>
+      <fieldset>
+        <legend>Sign Up</legend>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row collapse">
+              <div class="small-10 columns">
+                <input type="text" placeholder="Hex Value">
+              </div>
+              <div class="small-2 columns">
+                <a href="#" class="button postfix">Go</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </template>

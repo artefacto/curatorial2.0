@@ -16,10 +16,12 @@
       <!-- Right Nav Section -->
       <ul class="right">
 
-
-        <li class="has-dropdown">
-          {{>loginButtons}}
+        <li> <a href="{{pathFor 'Admin'}}">Admin</a>
         </li>
+        {{#if currentUser}}
+        <li class="active">{{> atNavButton}}</li>
+
+        {{/if}}
       </ul>
 
 
@@ -28,6 +30,9 @@
         <li> <a href="{{pathFor 'about'}}">About</a>
         </li>
         <li> <a href="{{pathFor 'contact'}}">Contact</a>
+        </li>
+
+        <li>
         </li>
 
       </ul>
