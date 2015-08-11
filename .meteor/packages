@@ -10,3 +10,4 @@ accounts-password
 accounts-ui-unstyled
 useraccounts:foundation
 
+useraccounts:iron-routing
