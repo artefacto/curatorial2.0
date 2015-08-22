@@ -1,5 +1,13 @@
 /* CSS declarations go here */
 h1,.ui.dividing.header {
   padding: 1em 0;
-  font-family: 'Bree Serif', serif;
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+body {
+
 }
