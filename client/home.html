@@ -1,35 +1,19 @@
 <template name="home">
-  <h1>Meteor starter app</h1>
+  <div class="ui container">
+    <h1 class="ui dividing header centered">Arched Eyebrows of the Apocalypse</h1>
+    <p>View the collection and collect and annotate your own collection</p>
+    <div class="ui divider"></div>
+    <div class="ui dividing right rail">
 
-  <div class="panel">
-    <h2>About this app</h2>
-    <p>Tell everyone about your amazing meteor app here
-    </p>
-    <a href="#" class="button small radius" data-reveal-id="cta-modal">Call to action</a>
+                 {{>categories}}
 
-  </div>
+                </div>
+                 <div class="column">
 
-</template>
+                                 <p class="ui medium header">All items</p>
+               {{>items}}
 
-<template name="modal">
-  <div id="cta-modal" class="reveal-modal" data-reveal>
-    <form>
-      <fieldset>
-        <legend>Sign Up</legend>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="row collapse">
-              <div class="small-10 columns">
-                <input type="text" placeholder="Hex Value">
               </div>
-              <div class="small-2 columns">
-                <a href="#" class="button postfix">Go</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-  </div>
+</div>
 </template>

@@ -1,0 +1,34 @@
+<template name="item">
+   <div class="ui cards">
+
+     <div class="ui card">
+       <div class="image">
+
+       <a href="/item/{{_id}}"><img src='{{url}}'></a>
+     </div>
+
+       <div class="content">
+         <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
+      {{title}}
+       <div class="meta">Format: {{medium}}<br />
+       Date: {{date}}<br />
+       Artist: {{artist}}
+
+       </div>
+       <div class="description"></div>
+       {{#if currentUser}}
+
+       <div class="extra content">
+           <i class="user icon"></i>
+           {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
+
+
+       </div>
+
+       {{/if}}
+
+     </div>
+   </div>
+
+</div>
+</template>

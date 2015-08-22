@@ -1,11 +1,14 @@
 <template name="layout">
+  <head>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+</head>
+<body>
   {{> header}}
-  <div class="row" id="fullpage">
-    <div class="small-12 columns">
+  <div class="ui container">
       {{> yield}}
 
 
-    </div>
   </div>
   {{> footer}}
+</body>
 </template>

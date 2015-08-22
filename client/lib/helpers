@@ -1,0 +1,10 @@
+UI.registerHelper('currentUserName', function() {
+  if(Meteor.user()){
+    return Meteor.user().emails[0].address;
+  }
+});
+
+
+Accounts.ui.config({
+  passwordSignupFields: "USERNAME_ONLY"
+});

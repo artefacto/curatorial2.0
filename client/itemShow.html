@@ -1,0 +1,22 @@
+<template name="itemShow">
+    <div class="ui ten column centered grid">
+  {{> item}}
+
+  </div>
+
+
+<!-- //only logged-in users can create Annotations -->
+  {{#if currentUser}}
+
+  <div class="row">
+    <!-- {{> addAnnotation}} -->
+</div>
+  {{/if}}
+
+
+             <div class="ui comments">
+               {{#each annotations}}
+         {{> annotation}}
+     {{/each}}
+             </div>
+</template>

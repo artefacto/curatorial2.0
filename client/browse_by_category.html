@@ -1,0 +1,27 @@
+<template name="browse_by_category">
+  <div class="column column-addon">
+
+    <h1>
+      <small>{{#if catnotselected}}Items{{else}}{{category}}  Items{{/if}}</small>
+    </h1>
+  </div>
+  <div class="ui grid" id="mainContent">
+
+    {{#each categoryList}}
+    <div class="four wide column">
+
+      {{>item}}
+    </div>
+    {{else}}
+      {{#if catnotselected}}
+        <div class='page-header'><h1><small>Select a category.</small></h1></div>
+      {{else}}
+        <div class='page-header'><h1><small>Nothing in this category.</small></h1></div>
+      {{/if}}
+    {{/each}}
+  </div>
+
+
+
+
+</template>
