@@ -13,7 +13,7 @@ Template.categories.helpers({
     return  Session.get('category');
   },
 categoryList: function(){
-    return Items.find({catName:Session.get('category')});
+    return Items.find({categoryName:Session.get('category')});
     // var currentCategory = Session.get('category'
     // return Items.find({ category:currentCategory});
 
