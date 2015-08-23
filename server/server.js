@@ -27,8 +27,9 @@ Meteor.publish("categories", function(){
   return Categories.find();
 })
 
-Meteor.publish('itemAnnotations', function(itemId) {
-    return Annotations.find({itemId: itemId});
+// return the user's own annotations only
+Meteor.publish('itemAnnotations', function() {
+    return Annotations.find({author: this.userId});
 });
 
 Sortable.collections = Items;

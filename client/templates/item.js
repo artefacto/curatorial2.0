@@ -7,4 +7,5 @@ currentPage: function(){
 // return Router.current().url
 
 }
+
 })

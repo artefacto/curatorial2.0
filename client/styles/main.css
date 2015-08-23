@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-h1,.ui.dividing.header {
+h1,h1.ui.dividing.header {
   padding: 1em 0;
   font-size: 3rem;
   font-family: 'Quicksand', sans-serif;
@@ -12,6 +12,9 @@ body {
 
 }
 
+#createAnnotation label {
+  display:none;
+}
 
 
 /* social share button styles */
