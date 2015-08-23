@@ -10,12 +10,14 @@
        <div class="content">
          <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
       {{title}}
+
        <div class="meta">Format: {{medium}}<br />
        Date: {{date}}<br />
        Artist: {{artist}}
 
        </div>
        <div class="description"></div>
+
        {{#if currentUser}}
 
        <div class="extra content">
@@ -26,6 +28,8 @@
        </div>
 
        {{/if}}
+       {{> social_buttons url=currentPage text=title}}
+
 
      </div>
    </div>

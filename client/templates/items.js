@@ -16,6 +16,10 @@ Template.items.helpers({
   categoryList: function(){
     return Items.find({catName:Session.get('category')});
 
+  },
+  currentPage: function(){
+    currentPage = Router.current().location.get().path;
+    return currentPage;
   }
 
 });
