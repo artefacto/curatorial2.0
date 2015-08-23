@@ -2,9 +2,13 @@
 
 Template.item.helpers({
 currentPage: function(){
-//return Router.current().itemShow
+if (Iron.Location.get().rootUrl.length) {
   return Iron.Location.get().href
 // return Router.current().url
+} else {
+  return "http://curatorial.us"
+}
+
 
 }
 

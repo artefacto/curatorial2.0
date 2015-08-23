@@ -14,7 +14,7 @@ Template.items.helpers({
     return Items.find();
   },
   categoryList: function(){
-    return Items.find({catName:Session.get('category')});
+    return Items.find({categoryName:Session.get('category')});
 
   },
   currentPage: function(){
