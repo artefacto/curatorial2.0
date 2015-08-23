@@ -1,22 +1,33 @@
 <template name="itemShow">
-    <div class="ui ten column centered grid">
+    <div class="ui column centered grid">
   {{> item}}
 
-  </div>
 
 
 <!-- //only logged-in users can create Annotations -->
   {{#if currentUser}}
 
   <div class="row">
-    <!-- {{> addAnnotation}} -->
-</div>
+
+    <div class="ui comments">
+      <h3 class="ui dividing header">Annotations/Notes</h3>
+
+      <ul class="annoations">
+        {{#each annotations}}
+        {{> annotation}}
+
+        {{/each}}
+
+      </ul>
+
+      {{> addAnnotation}}
+    </div></div>
+
   {{/if}}
+  </div> <!-- end of centered column -->
 
 
-             <div class="ui comments">
-               {{#each annotations}}
-         {{> annotation}}
-     {{/each}}
-             </div>
+
+
+
 </template>

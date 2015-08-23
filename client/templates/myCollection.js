@@ -1,8 +1,4 @@
-
-
-Meteor.subscribe("itemAnnotations");
-
-Template.itemShow.helpers({
+Template.myCollection.helpers({
   annotations: function(){
     return Annotations.find({itemId: this._id});
   }

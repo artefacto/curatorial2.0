@@ -6,3 +6,15 @@ Template.annotation.helpers({
     return Annotations.find();
   }
 })
+
+
+AutoForm.hooks({
+  createAnnotation: {
+    before: {
+      method: function(doc) {
+        doc.itemId = Template.instance().data.Item._id
+        return doc;
+      }
+    }
+  }
+});
