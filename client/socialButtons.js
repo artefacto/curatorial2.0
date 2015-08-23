@@ -1,9 +1,9 @@
 SocialButtons.config({
-  facebook: false,
-  google: true,
+  facebook: true,
+  google: false,
   twitter:true,
   pinterest: true,
- tumblr: true,
+ tumblr: false,
  pocket: true,
   via: 'Curatorial by @artefactors'
 })
