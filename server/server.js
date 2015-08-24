@@ -1,5 +1,6 @@
 Meteor.startup(function() {
 
+  if(Items.find().count()) {
 
   var items = JSON.parse(Assets.getText("data/sample-data.json"));
 
@@ -17,6 +18,7 @@ Meteor.startup(function() {
       artist: item.artist
     });
   }
+}
 
   if (Categories.find().count() === 0) {
     // Some initial categories

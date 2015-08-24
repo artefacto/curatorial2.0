@@ -1,39 +1,42 @@
 <template name="item">
-   <div class="ui cards">
 
-     <div class="ui card">
-       <div class="image">
+  <div class="card">
+    <div class="content">
+      <div class="image">
 
-       <a href="/item/{{_id}}"><img src='{{url}}'></a>
-     </div>
+        <a href="/item/{{_id}}">
+          <img src='{{url}}'>
+        </a>
+      </div>
 
-       <div class="content">
-         <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
-      {{title}}
+      <div class="content">
+        <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
+        {{title}}
 
-       <div class="meta">Format: {{medium}}<br />
-       Date: {{date}}<br />
-       Artist: {{artist}}
+        <div class="meta">Format: {{medium}}
+          <br /> Date: {{date}}
+          <br /> Artist: {{artist}}
 
-       </div>
-       <div class="description"></div>
+        </div>
+        <div class="description"></div>
 
-       {{#if currentUser}}
+        {{#if currentUser}}
 
-       <div class="extra content">
-           <i class="user icon"></i>
-           {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
-
-
-       </div>
-
-       {{/if}}
-       {{> social_buttons url=currentPage text=title}}
+        <div class="extra content">
+          <i class="user icon"></i> {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
 
 
+        </div>
 
-     </div>
-   </div>
+        {{/if}} {{> social_buttons url=currentPage text=title}}
 
-</div>
+        <ul class="annoations">
+          {{#each annotations}} {{> annotation}} {{/each}}
+
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
 </template>
