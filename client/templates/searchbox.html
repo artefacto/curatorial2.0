@@ -1,0 +1,9 @@
+<template name="searchBox">
+    {{> esInput index="items" placeholder="Search..." }}
+
+    <ul>
+        {{#esEach index="items"}}
+            <li>Matching items: <a href="/item/{{_id}}">{{title}}</a></li>
+        {{/esEach}}
+    </ul>
+</template>
