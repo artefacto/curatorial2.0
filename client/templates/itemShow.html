@@ -1,32 +1,71 @@
 <template name="itemShow">
-    <div class="ui column centered grid">
-  {{> item}}
+  <div class="ui two column centered grid">
+    <div class="row">
+
+      <div class="ui card">
+        <div class="ui top attached header"><a href="/item/{{_id}}" class="header">{{title}}</a>
+        </div>
+        <div class="image">
+
+          <a href="/item/{{_id}}">
+            <img src='{{url}}'>
+          </a>
+        </div>
+
+        <div class="content">
+
+          <div class="meta">Format: {{medium}}
+            <br /> Date: {{date}}
+            <br /> Artist: {{artist}}
+
+          </div>
+          <div class="description">
+            {{description}}
+          </div>
+
+          {{#if currentUser}}
+
+          <div class="extra content">
+            {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
 
 
+          </div>
 
-<!-- //only logged-in users can create Annotations -->
-  {{#if currentUser}}
+          {{/if}} {{> social_buttons url=currentPage text=title}}
 
-  <div class="row">
+          <div class="comments">
 
-    <div class="ui comments">
-      <h3 class="ui dividing header">Annotations/Notes</h3>
+            <ul class="annoations">
 
-      <ul class="annoations">
-        {{#each annotations}}
-        {{> annotation}}
+              {{#each annotations}} {{> annotation}} {{/each}}
+            </ul>
+          </div>
 
-        {{/each}}
+        </div>
+      </div>
+    </div>
 
-      </ul>
+    <!-- //only logged-in users can create Annotations -->
+    {{#if currentUser}}
 
-      {{> addAnnotation}}
-    </div></div>
+    <div class="row">
 
-  {{/if}}
-  </div> <!-- end of centered column -->
+      <div class="ui comments">
+        <h3 class="ui dividing header">Annotations/Notes</h3>
 
+        <ul class="annoations">
+          {{#each annotations}} {{> annotation}} {{/each}}
 
+        </ul>
+
+        {{> addAnnotation}}
+      </div>
+    </div>
+
+    {{/if}}
+
+  </div>
+  <!-- end of centered column -->
 
 
 

@@ -1,15 +1,12 @@
 <template name="addAnnotation">
-  {{#autoForm collection="Annotations" id="createAnnotation" class="ui form" type="insert" itemId=_id}}
-
-
-
+  {{#autoForm collection="Annotations" id="createAnnotation" class="ui reply form" type="insert" itemId=_id}}
   <legend>Annotation</legend>
   {{ > afQuickField name="itemId" value=_id style="display: none;" }}
-  <div class="ui form">
+  <div class="ui field">
   {{> afQuickField name='body' rows=6 class="ui input fluid"}}
 </div>
 <button type="submit" class="ui right labeled icon button">
-  <i class="right arrow icon"></i>
+  <i class="left arrow icon"></i>
   Submit
 </button>
 {{/autoForm}}
