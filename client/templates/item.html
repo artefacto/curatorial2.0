@@ -1,7 +1,6 @@
 <template name="item">
 
-  <div class="card">
-    <div class="content">
+  <div class="ui card">
       <div class="image">
 
         <a href="/item/{{_id}}">
@@ -10,7 +9,7 @@
       </div>
 
       <div class="content">
-        <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
+        <div id='{{_id}}' class='header'><a href="/item/{{_id}}" class="header">{{title}}</a></div>
         {{title}}
 
         <div class="meta">Format: {{medium}}
@@ -18,7 +17,8 @@
           <br /> Artist: {{artist}}
 
         </div>
-        <div class="description"></div>
+        <div class="description">
+        </div>
 
         {{#if currentUser}}
 
@@ -37,6 +37,5 @@
 
 
       </div>
-    </div>
   </div>
 </template>
