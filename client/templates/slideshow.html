@@ -1,0 +1,25 @@
+<template name="slideshow">
+    <div class="ui two column centered grid">
+        <div class="column">
+            <div id="carousel">
+
+                {{#each slides}}
+                    <div>
+                        <div class="image">
+
+
+                            <img src='{{url}}'>
+                            <div class="ui raised segment">      <a href="/item/{{_id}}">{{title}}  </a></div>
+                        </div>
+
+                    </div>
+
+                {{/each}}
+
+            </div>
+
+        </div>
+    </div>
+
+
+</template>
