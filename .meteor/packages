@@ -11,6 +11,8 @@ useraccounts:iron-routing
 maibaum:foundation-icons
 useraccounts:semantic-ui
 semantic:ui
+accounts-twitter
+service-configuration
 flemay:less-autoprefixer
 aldeed:autoform
 aldeed:collection2
