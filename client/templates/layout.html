@@ -1,16 +1,16 @@
 <template name="layout">
-  <head>
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700italic,700,600,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  {{> header}}
-  <div class="ui container">
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700italic,700,600,300' rel='stylesheet'
+              type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    {{> header}}
+    <h1 class="ui dividing header centered banner">Curatorial</h1>
 
-      {{> yield}}
+    {{> yield}}
 
 
-  </div>
-  {{> footer}}
-</body>
+    {{> footer}}
+    </body>
 </template>

@@ -1,12 +1,15 @@
 /* CSS declarations go here */
 h1,h1.ui.dividing.header {
-  padding: 1em 0;
+  padding: 0 0 1em 0;
   font-size: 3rem;
   font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
+
+.banner {
+}
 
 img {
   max-width: 100%;
