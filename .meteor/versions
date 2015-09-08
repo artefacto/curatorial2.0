@@ -75,6 +75,7 @@ semantic:ui-data@2.0.8
 service-configuration@1.0.4
 session@1.1.0
 sha@1.0.3
+shcherbin:slickjs@1.5.8
 shmck:meteor-social-buttons@0.1.5
 softwarerero:accounts-t9n@1.0.9
 spacebars@1.0.6
