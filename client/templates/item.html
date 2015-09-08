@@ -23,12 +23,12 @@
         {{#if currentUser}}
 
         <div class="extra content">
-          <i class="user icon"></i> {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
+       <i class="user icon"></i> {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
 
 
         </div>
 
-        {{/if}} {{> social_buttons url=currentPage text=title}}
+        {{/if}}
 
         <ul class="annoations">
           {{#each annotations}} {{> annotation}} {{/each}}

@@ -1,6 +1,6 @@
 Meteor.startup(function() {
 
-  if(Items.find().count()) {
+  if (Items.find().count() === 0) {
 
   var items = JSON.parse(Assets.getText("data/sample-data.json"));
 
