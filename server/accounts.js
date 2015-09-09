@@ -1,15 +1,15 @@
 // Set up login services
 Meteor.startup(function() {
     // Add Twitter configuration entry
-     ServiceConfiguration.configurations.update(
-     { service: "twitter" },
-     { $set: {
-     appId: "XXXXXXXXXXXXXXX",
-     secret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-     }
-     },
-     { upsert: true }
-     );
+    // ServiceConfiguration.configurations.update(
+    // { service: "twitter" },
+    // { $set: {
+    // appId: "XXXXXXXXXXXXXXX",
+    // secret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    // }
+    // },
+    // { upsert: true }
+    // );
 
 
     // Add GitHub configuration entry

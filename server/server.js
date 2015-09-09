@@ -59,5 +59,5 @@ Meteor.publish('itemAnnotations', function() {
   });
 });
 
-Sortable.collections = Items;
 Sortable.collections = Favorites;
+Sortable.collections = Items;

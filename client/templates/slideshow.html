@@ -9,7 +9,15 @@
 
 
                             <img src='{{url}}'>
-                            <div class="ui raised segment">      <a href="/item/{{_id}}">{{title}}  </a></div>
+                            <div class="ui raised segment">      <a href="/item/{{_id}}">{{title}}  </a>
+
+                                <div class="extra content">
+                                   {{> favoriteButton _id=_id}} || {{favoriteCount _id}}
+
+
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>

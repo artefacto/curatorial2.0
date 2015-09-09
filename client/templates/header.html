@@ -2,7 +2,7 @@
 
 <template name="header">
   <div class="ui menu" data-topbar role="navigation">
-    <div class="header item"><a href="{{pathFor 'home'}}">Curatorial</a></div>
+    <div class="header item"><a href="{{pathFor 'home'}}" class="name">Curatorial</a></div>
     <a href="{{pathFor 'Admin'}}" class="item">Admin</a>
     <a href="{{pathFor 'about'}}" class="item">About</a>
 
@@ -13,6 +13,7 @@
     {{/if}}
 
       <div class="right menu">
+
           {{> atNavButton}}
       </div>
   </div>
