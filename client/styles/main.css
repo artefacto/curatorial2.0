@@ -1,12 +1,17 @@
 /* CSS declarations go here */
 h1,h1.ui.dividing.header {
-  padding: 0 0 1em 0;
-  font-size: 3rem;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bolder;
-  text-transform: uppercase;
+  padding: 1em 0 1em 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-style: italic;
+
 }
 
+.menu .name {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #4D7198;
+}
 
 .banner {
 }

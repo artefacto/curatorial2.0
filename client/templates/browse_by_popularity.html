@@ -1,0 +1,29 @@
+<template name="browseByPopularity">
+    <div class="ui two column centered grid">
+        <div class="column">
+            {{#each orderByFavorites Items}}
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+
+                            <img src='{{url}}'>
+                        </div>
+
+                        <div class="content">
+                            <div id='{{_id}}' class='header'><a href="/item/{{_id}}">{{title}}</a></div>
+                            {{title}}
+                            <div class="meta">{{format}}</div>
+                            <div class="description"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            {{/each}}
+
+        </div>
+    </div>
+
+
+</template>
