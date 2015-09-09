@@ -1,8 +1,22 @@
 <template name="contact">
   <h2>Get in touch</h2>
   <p>We'd love to hear from you</p>
-  <form>
+    <form class="ui form">
+          {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"}}
+              <fieldset>
+                  <div class="field">
+                  {{> afQuickField name="name"}}</div>
+                  <div class="field">
 
+                  {{> afQuickField name="email"}}</div>
+                  <div class="field">
+                  {{> afQuickField name="message" rows=10}}</div>
+                  <div>
+                      <button class="ui button" type="submit">
+                      <button type="reset" class="ui button">Reset</button>
+                  </div>
+              </fieldset>
+          {{/autoForm}}
   </form>
 
 </template>
