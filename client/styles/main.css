@@ -4,6 +4,10 @@ h1,h1.ui.dividing.header {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   font-style: italic;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+  color: #4D7198;
 
 }
 
@@ -11,6 +15,11 @@ h1,h1.ui.dividing.header {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   color: #4D7198;
+
+}
+
+.ui.menu {
+  background: #F5F5F5;
 }
 
 .banner {

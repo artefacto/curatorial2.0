@@ -63,6 +63,8 @@ Meteor.methods({
       text: text
     });
   }
+
+
 });
 
 Meteor.publish("items", function() {
