@@ -76,6 +76,15 @@ Meteor.publish("categories", function() {
   return Categories.find();
 })
 
+Meteor.publish('singleItem', function(slug){
+  check(slug, String);
+  var data = Items.find({"slug": slug});
+  if (data) {
+    return data;
+  }
+  this.ready();
+});
+
 // return the user's own annotations only
 Meteor.publish('itemAnnotations', function() {
   return Annotations.find({
