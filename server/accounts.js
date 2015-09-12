@@ -1,15 +1,14 @@
 // Set up login services
 Meteor.startup(function() {
-    // Add Twitter configuration entry
-    // ServiceConfiguration.configurations.update(
-    // { service: "twitter" },
-    // { $set: {
-    // appId: "XXXXXXXXXXXXXXX",
-    // secret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    // }
-    // },
-    // { upsert: true }
-    // );
+     //Add Twitter configuration entry - fixing http://stackoverflow.com/questions/15592194/meteor-twitter-login-internal-server-error
+  Accounts.loginServiceConfiguration.remove({
+   service: "twitter"
+  });
+  Accounts.loginServiceConfiguration.insert({
+   service: "twitter",
+   consumerKey: "ZR1k2D20aQrzKM4TjYncgfZ0B",
+   secret: "bGEkJnlfluWVOvWkaAFFuCmus4qP0VMJJN8IjYVEuTeUHxlIHD"
+  });
 
 
     // Add GitHub configuration entry
