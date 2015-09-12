@@ -3,13 +3,13 @@
   <div class="ui card">
       <div class="image">
 
-        <a href="/item/{{_id}}">
+          <a href="{{ pathFor 'itemShow' }}">
           <img src='{{url}}'>
         </a>
       </div>
 
       <div class="content">
-        <div id='{{_id}}' class='header'><a href="/item/{{_id}}" class="header">{{title}}</a></div>
+        <div id='{{_id}}' class='header'><a href="{{ pathFor 'itemShow' }}" class="header">{{title}}</a></div>
         {{title}}
 
         <div class="meta">Format: {{medium}}
@@ -30,7 +30,7 @@
 
         {{/if}}
 
-        <ul class="annoations">
+        <ul class="annotations">
           {{#each annotations}} {{> annotation}} {{/each}}
 
         </ul>

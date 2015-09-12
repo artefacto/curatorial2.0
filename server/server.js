@@ -9,6 +9,7 @@ Meteor.startup(function() {
 
     Items.insert({
       title: item.title,
+      slug:item.title.replace(/\s/g,'-').substring(0, 50), //crate a slug
       url: item.url,
       description: item.description,
       order: item.order,
