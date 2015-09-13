@@ -1,7 +1,17 @@
 <template name="categories">
-  <ul>
+    <div class="ui two column centered grid">
+        <div class="column">
+    <div class="ui middle aligned animated celled list">
+
     {{#each Categories}}
-     <li id="categories"><a class="item" href="/{{name}}">{{name}}</a></li>
+    <div class="item">
+        <img class="ui avatar image" src="http://lorempixel.com/100/100/cats">
+        <div class="content">
+            <div class="header"><a href="{{pathFor 'byCategory'}}">{{name}}</a></div>
+        </div>
+        </div>
     {{/each}}
-  </ul>
+        </div>
+            </div>
+        </div>
 </template>

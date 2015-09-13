@@ -92,5 +92,9 @@ Meteor.publish('itemAnnotations', function() {
   });
 });
 
+Meteor.publish('userByUsername', function(username){
+  return Meteor.users.find({});
+})
+
 Sortable.collections = Favorites;
 Sortable.collections = Items;
