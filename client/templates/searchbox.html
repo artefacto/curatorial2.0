@@ -7,7 +7,7 @@
     </div>
   <ul>
         {{#esEach index="items"}}
-            <li><a href="/item/{{_id}}" class="header">{{title}}</a></li>
+            <li><a href="{{ pathFor 'itemShow' }}" class="header">{{title}}</a></li>
         {{/esEach}}
     </ul>
 </div>
