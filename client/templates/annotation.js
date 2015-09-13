@@ -1,9 +1,12 @@
-Meteor.subscribe("annotations");
-
+Meteor.subscribe("itemAnnotations");
+Meteor.subscribe("publishedAnnotations")
 
 Template.annotation.helpers({
   annotation: function(){
     return Annotations.find();
+  },
+  publicAnnotations: function(){
+    return Annotations.find({publish: true})
   }
 })
 

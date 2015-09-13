@@ -90,12 +90,12 @@ Meteor.publish('itemAnnotations', function() {
   return Annotations.find({
     author: this.userId
   });
-
+});
 
   //public annotations
   Meteor.publish('publishedAnnotations', function() {
     return Annotations.find({
-      publish: true
+      publish:true
     });
 });
 
