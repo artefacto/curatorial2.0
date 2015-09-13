@@ -1,12 +1,12 @@
 <template name="browse_by_category" xmlns="http://www.w3.org/1999/html">
-    <div class="ui two column centered grid">
-        <div class="column">
+    <div class="column">
 
         <div class="ui grid" id="mainContent">
+            <h4 class="ui horizontal header divider">
+                <a href="#">BROWSE THE COLLECTION BY {{currentCategory}}</a>
+            </h4>
             {{#each categoryItems}}
-                <h4 class="ui horizontal header divider">
-                    <a href="#">BROWSE THE COLLECTION BY {{currentCategory}}</a>
-                </h4>
+
 
                 <div class="four wide column">
                         {{>item}}
@@ -14,21 +14,21 @@
 
 
             {{else}}
+                <div class="center aligned one column row">
+                    <div class="column">
+                    <div class="ui info message">
 
-                <div class="ui info message">
-                    <div class="header">
+                        <div class="header">
                     Uh oh.
                 </div>
-                    <p>Sorry, there don't seem to be any items in this category at the moment.</p>
+                        <p>Sorry, there don't seem to be any items in this category at the moment.</p>
+                    </div>
                 </div>
-
-
+                </div>
             {{/each}}
 
         </div>
 
-
-    </div>
 
     </div>
 

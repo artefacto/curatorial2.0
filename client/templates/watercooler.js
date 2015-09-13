@@ -1,10 +1,10 @@
 Template.watercooler.helpers({
 
     myFavorites: function(){
-        return Favorites.find();
+        return Favorites.find({});
     },
     mySharedAnnotations: function(){
-        return Annotations.find({published: true})
+        return Annotations.find({publish: true})
     }
 
 })

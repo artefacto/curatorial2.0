@@ -5,11 +5,15 @@
         {{ > afQuickField name="itemId" value=_id style="display: none;" }}
         <div class="ui field">
                 {{> afQuickField name='body' rows=6 class='ui input fluid'}}
+
+        </div>
+        <div class="ui field">
+
+                {{> afQuickField name="publish" type="boolean-radios" trueLabel="Yes" falseLabel="No"}}
         </div>
 
-
         <button type="submit" class="ui right labeled icon button">
-            <i class="left arrow icon"></i>
+            <i class="right arrow icon"></i>
             Submit
         </button>
     {{/autoForm}}
