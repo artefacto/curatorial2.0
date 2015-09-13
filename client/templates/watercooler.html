@@ -1,0 +1,56 @@
+<template name="watercooler">
+
+    {{#each users }}
+        <a href="{{ pathFor 'userAccount' }}">My account</a>
+    {{/each }}
+
+
+    {{#if Favorites 'Items'}}
+
+        <div class="ui four column grid stackable">
+
+            {{#each Favorites 'Items'}}
+            <!--{{#sortable items=Items}}-->
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+
+                            <img src='{{url}}'>
+                        </div>
+
+                        <div class="content">
+                            <div id='{{_id}}' class='header'><a href="{{ pathFor 'itemShow' }}">{{title}}</a></div>
+                            {{title}}
+                            <div class="meta">{{format}}</div>
+                            <div class="description"></div>
+                            <div class="ui comments">
+
+                                <div class="ui horizontal divider">
+                                    <i class="comments outline icon"></i>
+                                </div>
+                                <ul class="annotations">
+                                    {{#each annotations}} {{> annotation}} {{/each}}
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                    <!--{{/sortable}}-->
+            {{/each}}
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    {{/if}}
+</template>
