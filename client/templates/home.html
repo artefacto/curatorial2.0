@@ -1,52 +1,49 @@
 <template name="home">
 
-  <div class="ui container">
+    <div class="ui container">
 
-      <div class="ui raised segment">      <p>View the collection and collect and annotate your own collection</p></div>
-
-
-      <div class="ui equal width stackable internally celled grid">
-
-          <div class="center aligned row">
-              <div class="column">
-                  <h3>Browse the collection as a slideshow -   <a href="{{pathFor 'slideshow'}}" class="item">here</a>
-                  </h3>
+        <div class="ui raised segment"><p>View the collection and collect and annotate your own collection</p></div>
 
 
-              </div>
-              <div class="column">
-                  <h3>Browse the most categories -   <a href="{{pathFor 'categories'}}" class="item">here</a>
-                  </h3>
+        <div class="ui equal width stackable internally celled grid">
+
+            <div class="center aligned row">
+                <div class="column">
+                    <h3><i class="icon browser"></i> Browse the collection <a href="{{pathFor 'slideshow'}}" class="item">as a slideshow</a>
+                    </h3>
 
 
+                </div>
+                <div class="column">
+                    <h3><i class="icon tags"></i> Browse the items <a href="{{pathFor 'categories'}}" class="item">by category</a>
+                    </h3>
 
-              </div>
+
+                </div>
 
 
-          </div>
+            </div>
+            <div class="center aligned row">
+                <div class="column">
+                    <h3><i class="icon find"></i> Search the collection by keyword </h3>
+                    {{> searchBox}}
+                </div>
 
-      </div>
+            </div>
 
-      <div class="ui four column centered grid">
-          <div class="column">
-          <p>Search the collection by keyword  </p>
-        {{> searchBox}}
-          </div>
+        </div>
 
+
+        <h4 class="ui horizontal header divider">
+            <a href="#">VIEWING THE FULL COLLECTION</a>
+        </h4>
+
+        <div class="column">
+
+                {{>items}}
+
+
+        </div>
     </div>
-
-
-
-      <h4 class="ui horizontal header divider">
-          <a href="#">BROWSE THE COLLECTION</a>
-      </h4>
-
-                 <div class="column">
-
-               {{>items}}
-
-
-              </div>
-</div>
 
 </template>

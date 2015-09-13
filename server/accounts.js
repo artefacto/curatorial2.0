@@ -6,8 +6,8 @@ Meteor.startup(function() {
   });
   Accounts.loginServiceConfiguration.insert({
    service: "twitter",
-   consumerKey: "ZR1k2D20aQrzKM4TjYncgfZ0B",
-   secret: "bGEkJnlfluWVOvWkaAFFuCmus4qP0VMJJN8IjYVEuTeUHxlIHD"
+   consumerKey: "xxxxxxxxxxxxx",
+   secret: "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   });
 
 
