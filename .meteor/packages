@@ -11,6 +11,7 @@ useraccounts:iron-routing
 maibaum:foundation-icons
 useraccounts:semantic-ui
 semantic:ui
+email
 accounts-twitter
 service-configuration
 flemay:less-autoprefixer
