@@ -48,6 +48,13 @@
 
 
                 <div class="ui comments">
+                    <h3>Annotations</h3>
+                    <ul class="annotations">
+                        {{#each sharedAnnotations}}
+                            {{> publicAnnotation}}
+                            {{/each}}
+
+                    </ul>
                     <h3 class="ui dividing header">My annotations/Notes</h3>
 
                     <ul class="annotations">

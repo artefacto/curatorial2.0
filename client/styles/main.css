@@ -34,8 +34,8 @@ body {
 
 }
 
-#createAnnotation label {
-  display:none;
+.no-label label {
+display:none;
 }
 
 

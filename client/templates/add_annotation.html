@@ -1,18 +1,24 @@
 <template name="addAnnotation">
 
-    {{#autoForm collection="Annotations" id="createAnnotation" class="ui reply form" type="insert" itemId=_id}}
+    {{#autoForm collection="Annotations" id="createAnnotation" class="ui form" type="insert" itemId=_id}}
         <legend></legend>
-        {{ > afQuickField name="itemId" value=_id style="display: none;" }}
-        <div class="ui field">
-                {{> afQuickField name='body' rows=6 class='ui input fluid'}}
+
+        <div class="ui field no-label">
+                {{ > afQuickField name="itemId" value=_id style="display: none;" }}
+
+                {{> afQuickField name="body" rows=6 class="ui input"}}
 
         </div>
-        <div class="ui field">
 
-                {{> afQuickField name='publish' type='boolean-radios' trueLabel='Yes' falseLabel='No'}}
+
+
+        <div class="ui field">
+                {{> afQuickField name="publish" type="boolean-select" trueLabel="Public" falseLabel="Private"}}
+
+
         </div>
 
-        <button type="submit" class="ui right labeled icon button">
+        <button type="submit" class="ui labeled icon bottom attached button">
             <i class="right arrow icon"></i>
             Submit
         </button>
